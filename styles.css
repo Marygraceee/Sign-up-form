@@ -1,0 +1,150 @@
+
+
+*{
+    font-family: 'Indie Flower', sans-serif;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+body{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+:root{
+    --divsheight: 100vh;
+}
+
+
+.sfondosinistra{
+    
+display: flex;
+background-color: white;
+height: 100vh;
+width: 40vw;
+justify-content: center;
+
+}
+
+.sfondodestra{
+    display: flex;
+    max-height: var(--divsheight);
+    min-height: var(--divsheight);
+    width: 60vw;
+    background-color: white;
+    flex-direction: column;  
+border-left: 2px solid pink;
+}
+
+.logo{
+    display: flex;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    height: 200px;
+    width: 80%;
+    margin-top: 200px;
+    justify-content: flex-end;
+    padding-right: 80px;
+    align-items: center;
+    border-radius: 5px;
+    font-size: larger;
+ 
+}
+
+.header{
+  min-height: 35vh;
+  max-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 233, 237);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: rgb(250, 250, 250); 
+   font-size: 35px;
+   padding: 30px;
+  font-weight: 600;
+   
+}
+
+
+
+.footer{
+    min-height: 30vh;
+  max-height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+    column-gap: 50px;
+    padding-top: 20px;
+    flex-direction: column;
+    background-color: rgb(255, 233, 237);
+    
+    
+}
+
+.mainform{
+    min-height: 35vh;
+    max-height: 35vh;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px; 
+    border-radius: 2px;
+  border-top: 2px solid rgb(255, 217, 223);
+  border-bottom: 2px solid rgb(255, 217, 223);
+
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  column-gap: 50px;
+  row-gap: 30px;  
+}
+
+.createacc{
+background-color: pink;
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+   border-radius: 15px;
+   padding: 20px;
+   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+   cursor: pointer;
+   transition: .2s linear;
+}
+
+.createacc:hover{
+    background-color: rgb(255, 132, 153);
+}
+
+
+
+input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+input:focus{
+    border: 2px solid rgb(101, 101, 255);
+}
+
+label {
+    font-weight: bold;
+    font-size: 25px
+}
+
+.footer > p{
+    font-size: 20px;
+    font-weight: bolder;
+}
